@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="register.php">
+            <input type="text" name="id" placeholder="아이디를
+            입력해주세요." required pattern="[a-zA-Z].+[0-9]"> 첫번째 입력하는건 알파벳이어야하고, 그 뒤에 .점이 온건 아무거나 가능하다는의미
+            but .점이 하나만 있으면 하나만 입력가능하므로 .+ 로 적으면 하나 이상 가능
+            반드시 끝에 숫자로 끝나야하는거면 [0-9] 적기
+            <input type="text" name="email" placeholder="이메일 입력">
+            <input type="submit">
+        </form>
+        required는 필수적으로 입력
+
+        pattern 이라는 속성 값으로 정규표현식이 들어온다
+        html은 programming언어, 정규표현식도 programming 언어이므로
+        정규표현식은 html과는 완전히 다른 문법을 가지고 있는프로그램잉 언ㅇ어
+
+        정규표현식은 어떠한 문자에서 어떠한 pattern을 찾아내서 그 pattern이
+        그 문자에 있는지 없는지를 확인하는 것
+    </body>
+</html>

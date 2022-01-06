@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <form action="">
+            Label로 제목들을 감싸주므로써 text,password등의 문자가 '무언가의이름표다'라는 것을 정확하게 표현가능
+            하지만 label 안의 text라는 문자가 input 태그에 대한 label인지는 명확하지 않으므로
+            각각의 label들이 누구의 이름표인지 연결시켜줘야한다
+            그때 사용되는데 label for 라는 속성을 사용!! 하고
+            input에도 id를 붙여 똑같은 이름 넣어줌으로써 연결
+
+            또는 label로 감싸주면 된다
+            <p>
+                <label for="id_txt">text</label>: 
+                <input id="id_txt" type="text" name="id" value="default value">
+            </p>
+            <p>
+                <label for="password">password:</label> 
+                <input id="password" type="password" name="pwd" value="default value">
+            </p>
+            <p>
+                <label>textarea</label>: 
+                <textarea rows="2">default value</textarea>
+            </p>
+
+            
+            
+            
+            
+            <p>
+                <label>
+                    <input type="checkbox" name="color" id="red">붉은색
+                </label>
+                
+                <label for="color_blue">
+                    <input id="color_blue" type="checkbox" name="color" id="blue">파란색
+                </label>
+            </p>
+            위 아래는 표현방법은 다르지만 같은 기능을하는 것이다.
+        </form>
+    </body>
+</html>

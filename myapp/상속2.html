@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Person(name){
+            this.name = name;
+        }
+        Person.prototype.name=null;
+        Person.prototype.introduce = function(){
+            return 'My name is '+this.name;
+        }
+
+        function Programmer(name){
+            this.name = name;
+        }
+        Programmer.prototype = new Person(); //person 이라는 공통의 분모가 있고 prog~과 desi~이라는 객체가//
+        Programmer.prototype.coding = function(){ //person 이라는 객체를 상속받음//
+            return "hello world";
+        }
+
+        function Designer(name){
+            this.name = name;
+        }
+        Designer.prototype = new Person();
+        Designer.prototype.design = function(){
+            return "beatiful";
+        }
+
+        var p1 = new Programmer('egoing');
+        document.write(p1.introduce()+"<br />");
+        document.write(p1.coding()+"<br />");
+
+        var p2 = new Designer('Leeche');
+        document.write(p2.introduce()+"<br />");
+        document.write(p2.design()+"<br />"); 
+    </script>
+</body>
+</html>

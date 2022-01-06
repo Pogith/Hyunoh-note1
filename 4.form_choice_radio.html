@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://abcidas.php">
+        <p>
+            <h1>색상</h1>
+        붉은색 : <input type="radio" name="color" value="red">
+        검은색 : <input type="radio" name="color" value="black">
+        파란색 : <input type="radio" name="color" value="blue">
+        : 같은 버튼이 생길경우, 같은 name으로 지정 해놓으면
+        하나의 버튼만 선택이된다.
+        </p>
+        <p>
+        <input type="radio" name="color2" >
+        <input type="radio" name="color2" checked> :checked를 적어 넣으면 선택이 됬으면 하는 것에 체크됨
+        <input type="radio" name="color2" >
+        </p>
+        : radio 버튼은 같은 name으로 지정해놓으면 하나만 선택이 된다.
+
+
+        but 같은 그룹으로 되어있어도 여러개가 선택이되게 하는 것이 checkbox이다.
+        
+            <h1>사이즈(다중선택)</h1>  
+                <p>
+                    95: <input type="checkbox" name="size" value="95">
+                    100 : <input type="checkbox" name="size" value="100">
+                    105 : <input type="checkbox" name="size"value="105">
+                </p>  
+                <input type="submit">
+               
+        </form>
+        
+    </body>
+</html>

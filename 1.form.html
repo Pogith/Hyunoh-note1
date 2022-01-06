@@ -1,0 +1,23 @@
+form 은사용자가 입력한 정보를 서버로 전송할 때 사용할때그러한 것들
+사용자가 입력한 정보를 서버로 전송하기 위해서
+input 이라는 입력하는 태그를 사용
+<html>
+    <body>
+        <form action=""> : 따옴표 안에는 제출할 주소를 입력
+        <p>아이디 : <input type="text"></p> : 여기서 p는 단락나누기
+        <p>비밀번호 : <input type="password"></p> : password 는 안보이게 칠수있음
+        <p>주소 : <input type="text"></p>
+        <input type="submit"> : submit은 정보를 제출할때 클릭가능
+        </form>
+
+        input type 만 되어잇으면 '아이디'와 '주소'에 입력한 값이 서버로
+        구별이 안되므로 밑에처럼 각각의 콘트롤에 이름을 입력해준다
+
+        <form action="http://localhost/login.php">
+            <p>아이디 : <input type="text" name="id"></p>
+            <p>비밀번호 : <input type="password" name="pwd"></p>
+            <p>주소 : <input type="text" name="address"></p>
+            <input type="submit">
+        </form>
+    </body>
+</html>

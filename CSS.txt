@@ -1,0 +1,109 @@
+
+
+
+드림코딩 by 엘리
+구독자 11.2만명
+
+React같은 프레임워크를 배우기전에 정말 기본중의 기본 HTML과 웹사이트를 분석할 수 있는 스킬을 잘 다지셔야 해요 ❤️  (↙ 자세한 내용)
+___________________________
+
+💡 풀스택 개발 로드맵 ⇢ https://academy.dream-coding.com/page...
+
+🚀 엘리와 더 체계적으로 배우고 싶다면 ⇢ 드림코딩 아카데미:
+http://academy.dream-coding.com/
+
+.....................................................
+
+🔗 Resources:
+Wikipedia 
+- HTML: https://en.wikipedia.org/wiki/HTML
+- Markup language: https://en.wikipedia.org/wiki/Markup_...
+- UTF-8: https://en.wikipedia.org/wiki/UTF-8
+
+MDN
+HTML elements reference: https://developer.mozilla.org/en-US/d...
+Document and website structure: https://developer.mozilla.org/en-US/d...
+
+Validator: https://validator.w3.org/
+
+Playground: http://jsbin.com/
+
+숙제는 여기서: https://en.wikipedia.org/wiki/HTML
+
+숙제도 다 하고 너무너무너무 심심하시면:
+https://www.w3.org/TR/html52/introduc...
+
+
+
+<!-- Input-->
+    <label for="">Name: </label>
+    <input type="text">
+label과 주로 같이 사용
+input은 한 페이지 안에 굉장히 많은 input이 있을 수 있기때문에 고유한 식별자를 줌
+ex) <!-- Input-->
+    <label for="input_name">Name: </label>
+    <input id="input_name" type="text">
+->너는 input_name 을 위한 label 이야라는 그룹가능
+
+<CSS (Cascading Style Sheet)>
+CSS 꽃 : Flex box
+
+
+<CSS>
+slectors
+: Html에 어떤 tag들을 고를건지를 규정하는 문법
+
+Universal     *(모든거를 고름)
+type       Tag(tag 된것들 고름)
+ID             #id(해당아이디 고를수있음)
+Class          .class
+State              :
+Attribute       []
+
+* 에 설정된 색깔보다 구체적인 항목에 대한 설정이 우선 적용
+ex) * { color: green;} 보다 li{color:blue;} 에 대한 색깔 설정이 우선적용
+
+Cascading
+1.Author style :CSS
+2.User style:사용자가 지정한 스타일
+3. Browser :브라우저에서 지정된 스타일링
+!important 는 가능하면 쓰지않는게 좋음
+  
+<!-- Block-level --> div는 block level 이라서한줄에 하나씩 나오고
+    <div></div>
+    <div></div>
+    <div></div>
+    
+    <!-- Inline-level --> 한줄에 공간이 많으면 여러개 나오고 기본갑은 css를 통해 변경가능
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+
+ex) div {
+  background: red;
+  display: inline-block;
+}
+
+span {
+  background: Blue;
+  display: block;
+
+
+<position>
+
+relative; 원래 있어야할 곳에서 px 만큼 이동
+absolute; 가까이 있는 상자에서 위치변경
+fixed; 상자에서 벗어나서 페이지 상에서 포지션 지정
+sticky; 원래있어야할 자리에 있고 scrolling 해도 자리 유지
+
+<flex box>
+-박스와 item들을 행 열로 자유자재로 배치할 수 있는 것
+-flex box만 잘 이해해도 웹사이트 layout 잘 만들기가능
+
+2가지 속성
+1)container
+:display, flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content
+2)item
+:order, flex-grow, flex-shrink, flex, align-self
+
+3)main axis / cross axis

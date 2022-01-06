@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function get_argument(arg){
+            return arg;
+        }
+        alert(get_argument(1));
+        alert(get_argument(2));
+        /*<script type="text/javascript">
+        function get_argument(arg){
+            return arg;
+        }
+        alert(get_argument(1));  여기서 1과2는 값인 인자
+        alert(get_argument(2));  arg는 그 값을 받는 매개변수
+        
+
+        복수인자
+        function get_argument(arg1, arg2){
+            return arg1 + arg2;
+        }
+        alert(get_argument(10+20));  이처럼 여러개의 입력값을 받을 수 있지만,
+         return값은 하나만 가질 수 있다는 한계가 있다.*/
+
+         var numbering = function (){
+    i = 0;
+    while(i < 10){
+        document.write(i);
+        i += 1;
+    }   
+}
+numbering();
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML - 수업</title>
+        <meta charset="utf-8">
+        <body>
+            td : table data ,표의 각각의 실제데이터를 의미
+            tr : table row, 같은행들을 그룹화 
+            table 태그만 쓰면 표처럼 배열되고 border을 쓰면 테두리생김
+            테두리를 예쁘게 꾸밀때는 CSS를 통해 꾸밈
+            
+            전체 테두리는 table로 묶어주고
+            하나의 행은 tr로 묶고
+            하나의 칸 하나는 td로 묶어주기
+
+            thead는 제목부분
+            tbody는 본문내용
+            제목 부분을 td -> th로 바꿔주면 진해진다
+            tfoot 는 젤 마지막
+
+            서로 위치를 다르게 해도 웹상에서는 똑같이 나옴
+
+        
+            <table border="5">
+                <thead>
+                <tr>    
+                    <th>이름</th>  <th>성별</th> <th>주소</th> <th>회비</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>    
+                    <td>최남</td>  <td>남</td>  <td>서울</td> <td>200</td>
+                </tr>
+                <tr>    
+                    <td>김영</td>  <td>여</td>  <td>서울</td> <td>160</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <td>합계</td>   <td></td>   <td></td> <td>360</td>
+                </tfoot>
+            </table>
+
+
+            <td rowspan="2"></td> : 2개의 행(수직)이 병합된다. 겹치는 행은 지워주기
+            <td colspan="3"></td> : 3개의 열(수평)이 병합된다. 겹치는 열은 지워주기
+            
+            <table border="1">
+                <thead>
+                <tr>    
+                    <th>이름</th>  <th>성별</th> <th>주소</th> <th>회비</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>    
+                    <td>최남</td>  <td>남</td>  <td rowspan="2">서울</td> <td>200</td>
+                </tr>
+                <tr>    
+                    <td>김영</td>  <td>여</td>   <td>160</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="3">합계</td>    <td>360</td>
+                </tfoot>
+        </body>
+    </head>
+</html>

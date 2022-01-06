@@ -1,0 +1,29 @@
+dropdown list 는 제한된 공간 안에서 여러개의 
+선택지를 고를 수 있게 하는 기능
+
+option 이라는 것은 선택할 수 있는 것들을 의미
+여기서 select 태그를 넣어주면 고를 수 있게 바뀜
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="http://localhost/color.php">
+            <h1>색상</h1>
+        <select name="color"> : select에 어떤 이름을 넣을지 정해줘야됨,그래야 색깔의 이름의 정보가 입력됨
+            <option value="red">붉은색</option> 보여지는거는 붉은색이지만 실제로 전송되는데이터는 value를 사용해야함
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit">
+
+        <h1>색상2(다중선택)</h1>
+        <select name="color2" multiple> : multiple을 넣어주면 한번에 여러가지를 선택가능
+            <option value="red">붉은색</option>
+            <option value="black">검은색</option>
+            <option value="blue">파란색</option>
+        </select>
+        <input type="submit">
+        </form>
+    </body>
+</html>

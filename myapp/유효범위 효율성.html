@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function a (){
+            var i = 0;
+        }
+        for( var i = 0; i < 5; i++){
+            a();
+            document.write(i);
+        }
+        /* 여기서 for 에서 var i는 어떤 함수에 소속되어있지
+        않으므로 전역변수가 된다.
+        그리고 a(); 라는 함수를 호출하게되면 var가 없어 i도 전역변수가
+        되므로 for 에 있는 var i의 i와 겹치게 된다.
+        그래서 a를 실행할때마다 i라는 값은 0으로 초기화가 되기때문에
+        i의 값은 5보다 계속해서 커지지 않으므로 무한반복
+        따라서 ㅇㅣ러한 부분들을 해결하기위해 지역변수가 존재*/
+    </script>
+</body>
+</html>

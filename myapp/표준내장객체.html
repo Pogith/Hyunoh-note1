@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       /* var arr = new Array('seoul', 'new york', ladarkh', 'pusan', 'Tsukuba');
+        function getRandomValueFromArray(arr){
+            var index = Math.floor(arr.length*Math.random());
+            return arr[index];
+        }
+        console.log(getComputedStyle(arr)); */
+        Array.prototype.rand = function(){
+            var index = Math.floor(this.length*Math.random());
+            return this[index];
+            }
+            var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
+            console.log(arr.rand());
+            /* Array 배열이라는 생성자를 통해서 만들어진 객체가
+            random이라는 메소드를 가지고 있다. random이라는 메소드 안에서 this는
+            바로 그 배열 객체 자체(new Array)를 가르킨다. 그래서 this 라고 해줘도 
+            this가 그 var arr 이라는 변수안에 담겨있는 배열 객체(new Array)가 되는 것이다.
+            따라서 this.length 하면 그 배열 안의 원소 숫자를 알 수 있고, 그기에 random값을 곱해
+            floor를 하면 index를 구할 수 있다.
+
+            ->prototype을 확장하는 것을 통해서 모든 배열이 공통적으로 가지고
+            있어야할 어떤 API를 사용자가 직접 정의할 수 있다는 것은 상당히 좋은점!
+    </script>
+</body>
+</html>
